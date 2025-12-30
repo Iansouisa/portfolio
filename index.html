@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/icons/ids-favicon.png" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comforter&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ian Souisa</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-M8V7DJP05B"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-M8V7DJP05B");
+  </script>
+  <body class="overflow-x-hidden bg-[#080808]">
+    <div class="fixed top-0 left-0 z-[-1] h-screen w-screen">
+      <div
+        class="h-full w-full bg-linear-to-br from-transparent via-transparent to-[#132054]"
+      ></div>
+    </div>
+    <header
+      class="to-transparant fixed top-0 z-9999 flex w-full justify-center bg-linear-to-b from-[#080808] px-10 py-6 text-[#F2F2F2] max-sm:px-4"
+    >
+      <div class="flex h-[40px] w-[1280px] items-center">
+        <div class="w-[15%] max-lg:w-full">
+          <a href="/" class="w-[40px]">
+            <img
+              src="./assets/logo/ids-logo.svg"
+              alt="ian souisa logo"
+              class="logo relative z-9999 w-[40px]"
+            />
+          </a>
+        </div>
+
+        <div class="w-[70%] max-lg:hidden">
+          <nav class="flex justify-center">
+            <ul class="flex gap-[56px] font-[Cormorant] text-2xl">
+              <li>
+                <a href="/#about" class="list-nav-item relative">about</a>
+              </li>
+              <li><a href="/#work" class="list-nav-item relative">work</a></li>
+              <li>
+                <a href="/#company" class="list-nav-item relative">company</a>
+              </li>
+              <li>
+                <a href="/#contact" class="list-nav-item relative">contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flex w-[15%] items-center justify-end max-lg:w-full">
+          <button
+            id="hamburger-icon"
+            aria-label="Main Menu"
+            aria-expanded="false"
+            aria-controls="fullscreen-menu"
+            class="z-9999 cursor-pointer lg:hidden"
+          >
+            <svg width="40" height="40" viewBox="0 0 100 100">
+              <path
+                class="line line1"
+                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+              />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path
+                class="line line3"
+                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="fullscreen-menu"
+        class="pointer-events-none absolute top-0 z-9998 flex h-screen w-screen items-center justify-center bg-linear-to-br from-[#080808] via-[#080808] to-[#132054] transition-opacity duration-500 ease-in-out"
+      >
+        <ul
+          class="flex flex-col gap-[24px] text-center font-[Cormorant] text-2xl"
+        >
+          <li><a href="#about" class="list-nav-item relative">about</a></li>
+          <li><a href="#work" class="list-nav-item relative">work</a></li>
+          <li><a href="#company" class="list-nav-item relative">company</a></li>
+          <li><a href="#contact" class="list-nav-item relative">contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="flex flex-col items-center">
+      <section
+        id="hero"
+        class="relative flex h-screen w-screen pt-18 max-sm:flex-col"
+      >
+        <div class="h-full w-[50%] px-4 py-4 max-sm:h-[50%] max-sm:w-full">
+          <div
+            class="h-full w-full rounded-2xl bg-[url('./assets/images/indonesia-thumbnail.jpg')] bg-cover bg-center"
+          ></div>
+        </div>
+        <div
+          class="flex h-full w-[50%] flex-col items-center justify-center gap-8 text-center font-[Comforter] text-9xl text-[#F2F2F2] max-sm:h-[50%] max-sm:w-full max-sm:text-7xl"
+        >
+          <h1 class="z-9998">Ian<br />Souisa</h1>
+        </div>
+      </section>
+
+      <section id="about" class="flex px-10 py-24 max-sm:px-4 max-sm:py-13">
+        <div
+          class="flex max-w-[1280px] items-center gap-x-[96px] gap-y-[32px] max-lg:flex-col-reverse"
+        >
+          <div class="w-full bg-cover bg-center text-[#ABAEBA] max-lg:w-full">
+            <h2 class="reveal-text w-fit text-left">About</h2>
+            <p>
+              Mijn naam is Ian Souisa, een designer, developer, ondernemer, en
+              oprichter van Dominium Consulting.
+            </p>
+          </div>
+          <div
+            class="flex w-full flex-row items-center gap-4 bg-cover bg-center max-lg:h-[50%] max-lg:w-full"
+          >
+            <div class="flex h-[80%] w-[45%] items-center">
+              <img
+                src="assets/images/ian-souisa-workspace.jpeg"
+                alt="ian souisa ian-souisa-workspace"
+                class="aspect-4/5 w-full rounded-2xl object-cover"
+              />
+            </div>
+            <div class="flex h-full w-[55%] items-center">
+              <img
+                src="assets/images/iansouisa.jpg"
+                alt="ian souisa"
+                class="z-10 aspect-4/5 w-full rounded-2xl object-cover shadow-[-17px_0_20px_rgba(0,0,0,0.3)]"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="work"
+        class="flex w-full flex-col items-center gap-8 px-10 py-24 max-sm:px-4 max-sm:py-13"
+      >
+        <h2 class="reveal-text">Work</h2>
+        <div
+          class="flex w-full max-w-[900px] items-center gap-12 max-lg:flex-col"
+        >
+          <div class="flip-card aspect-5/4 w-1/2 max-sm:w-full">
+            <div class="flip-card-inner w-full">
+              <div
+                class="flip-card-front w-full rounded-2xl bg-[url('./assets/images/symbiotic-front.jpg')] bg-cover bg-center"
+              ></div>
+              <div
+                class="flip-card-back rounded-2xl bg-[url('./assets/images/symbiotic-thumbnail.jpg')] bg-cover bg-center"
+              ></div>
+            </div>
+          </div>
+
+          <div class="flip-card aspect-5/4 w-1/2 max-sm:w-full">
+            <div class="flip-card-inner w-full">
+              <div
+                class="flip-card-front w-full rounded-2xl bg-[url('./assets/images/favour-chocolate-front.jpg')] bg-cover bg-center"
+              ></div>
+              <div
+                class="flip-card-back rounded-2xl bg-[url('./assets/images/favour-chocolate-thumbnail.jpg')] bg-cover bg-center"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="company"
+        class="flex w-full flex-col items-center px-10 py-13 max-sm:px-4 max-sm:py-13"
+      >
+        <a
+          href="https://www.dominiumconsulting.com"
+          target="_blank"
+          class="w-full max-w-[1280px]"
+        >
+          <div
+            class="w-full rounded-xl bg-linear-to-b from-[#2B2C33] to-[#212125] p-0.5"
+          >
+            <div
+              class="relative flex w-full flex-col items-center gap-6 rounded-xl bg-[#080808] py-13"
+            >
+              <img
+                src="assets/logo/dominium-logo-light.png"
+                alt="dominium consulting logo"
+                class="w-[200px] max-sm:w-[100px]"
+              />
+            </div>
+          </div>
+        </a>
+      </section>
+
+      <section
+        id="contact"
+        class="flex w-full justify-center px-10 py-24 max-sm:px-4"
+      >
+        <div class="flex w-full max-w-[1280px] items-center max-lg:flex-col">
+          <div class="flex w-1/3 items-center justify-center max-sm:w-full">
+            <h2 class="reveal-text">Contact</h2>
+          </div>
+
+          <div
+            class="grid w-2/3 grid-cols-2 gap-4 max-sm:w-full max-sm:grid-cols-1"
+          >
+            <a href="mailto:iansouisa@gmail.com" target="_blank">
+              <div
+                class="flex h-full items-center gap-2 rounded-xl p-6 max-lg:items-start"
+              >
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#f2f2f2"
+                    class="size-13"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                    />
+                  </svg>
+                </div>
+                <div class="flex flex-col">
+                  <h3 class="text-xl text-white">Mail</h3>
+                  <p class="text-sm">iansouisa@gmail.com</p>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/ian-souisa-761237361/"
+              target="_blank"
+            >
+              <div
+                class="flex h-full items-center gap-2 rounded-xl p-6 max-lg:items-start"
+              >
+                <div>
+                  <img
+                    src="./assets/icons/linkedin-icon.svg"
+                    alt="linkedin logo icon"
+                    class="h-[56px]"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <h3 class="text-xl text-white">Linkedin</h3>
+                  <p class="text-sm">@iansouisa</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://www.dominiumconsulting.com" target="_blank">
+              <div
+                class="flex h-full items-center gap-2 rounded-xl p-6 transition-all max-lg:items-start"
+              >
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#f2f2f2"
+                    class="size-13"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
+                    />
+                  </svg>
+                </div>
+                <div class="flex flex-col">
+                  <h3 class="text-xl text-white">Dominium Consulting</h3>
+                  <p class="text-sm">dominiumconsulting.com</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="">
+              <div
+                class="flex h-full items-center gap-2 rounded-xl p-6 transition-all max-lg:items-start"
+              >
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#f2f2f2"
+                    class="size-13"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
+                    />
+                  </svg>
+                </div>
+                <div class="flex flex-col">
+                  <h3 class="text-xl text-white">Website</h3>
+                  <p class="text-sm">iansouisa.com</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="flex w-full flex-col items-center">
+      <div class="flex w-full flex-col items-center gap-y-6 py-4">
+        <a href="/">
+          <img
+            src="./assets/logo/ids-logo.svg"
+            alt="ian souisa logo"
+            class="logo w-[40px]"
+          />
+        </a>
+        <ul
+          class="flex gap-x-[56px] gap-y-[16px] text-center font-[Cormorant] text-2xl text-[#ABAEBA] max-lg:flex-col max-sm:hidden"
+        >
+          <li>
+            <a href="#about" class="list-nav-item relative">about</a>
+          </li>
+          <li>
+            <a href="#work" class="list-nav-item relative">work</a>
+          </li>
+          <li>
+            <a href="#company" class="list-nav-item relative">company</a>
+          </li>
+          <li>
+            <a href="#contact" class="list-nav-item relative">contact</a>
+          </li>
+        </ul>
+        <p class="text-xs">© 2025 Ian Souisa. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const flipCards = document.querySelectorAll(".flip-card");
+
+        flipCards.forEach(function (card) {
+          card.addEventListener("click", function () {
+            const innerCard = card.querySelector(".flip-card-inner");
+            if (innerCard) {
+              innerCard.classList.toggle("is-flipped");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
